@@ -162,6 +162,9 @@
 							<td height="30"><a href="#projects-skittles" id="projects-skittles" class="projects2">Skittle Sorter</a></td>
 						</tr>
 						<tr>
+							<td height="30"><a href="#projects-crossword" id="projects-crossword" class="projects2">Crossword Puzzle</a></td>
+						</tr>
+						<tr>
 							<td height="30"><a href="#projects-spoofer" id="projects-spoofer" class="projects2">Magnetic Stripe Spoofer</a></td>
 						</tr>
 						<tr>
@@ -271,13 +274,24 @@
 					Code and CAD files can be found at <a href="https://github.com/BannerMatt/CandySorter">GitHub</a>.
 					</p>
 				</div>
+				<div id="projects3-crossword">
+					<h2>Crossword Puzzle</h2>
+					<p>
+					<img src="/img/crossword.png" alt="" width="350" height="350"><br>
+					<p>
+					In March 2013, after binging on crossword puzzles, I decided to try my hand at making my own.<br><br>
+					It is available as both a PDF and an Across Lite file:<br>
+					<a href="https://www.dropbox.com/s/435g7zwilijfurn/Minsky_Crossword.pdf">PDF</a><br>
+					<a href="https://www.dropbox.com/s/r45oag0y8ipojr7/Minsky_Crossword.puz">Across Lite</a>
+					</p>
+				</div>
 				<div id="projects3-spoofer">
 					<h2>Magnetic Stripe Spoofer</h2>
 					<p>
 					<a href="http://youtu.be/y988PGSIGDA"><img src="/img/spoofer.jpg" alt="" width="350" height="233"></a><br>
 					<p>
-					See it in action <a href="http://youtu.be/y988PGSIGDA">here</a><br>
-					Full description coming soon.
+					For our Electronics Design Lab, Jeff Boye and I built a magnetic stripe spoofing device. It was made using an Arduino and has the ability to enter 16 digit values (printed on our school IDs) either manually or using an attached card reader. It can store ten different IDs in EEPROM for easy access. We also gave it the ability to iterate through values, however slow read times make this an inefficient strategy.<br><br>
+					See our project video <a href="http://youtu.be/y988PGSIGDA">here</a>
 					</p>
 				</div>
 				<div id="projects3-catan">
@@ -285,8 +299,8 @@
 					<p>
 					<a href="http://imgur.com/a/oPcsq/all#0"><img src="/img/catan.jpg" alt="" width="350" height="233"></a><br>
 					<br>
-					I made a Settlers of Catan board on a 3D printer. The regular game board is made out of cardboard and that tends to warp with the seasons, so I made this with interlocking pieces that allow it to get knocked around a bit without destroying your game. <br>
-					The files are all available on <a href="http://www.thingiverse.com/thing:25224">Thingiverse</a>.
+					I made a Settlers of Catan board on a 3D printer. The regular game board is made out of cardboard and that tends to warp with the seasons, so I made this with interlocking pieces that allow it to get knocked around a bit without destroying your game. <br><br>
+					The CAD files are all available on <a href="http://www.thingiverse.com/thing:25224">Thingiverse</a>.
 					</p>
 				</div>
 				<div id="projects3-lightwall">
@@ -294,7 +308,7 @@
 					<p>
 					<a href="http://digitalmedia.jhu.edu/projects/interstices/"><img src="/img/lightwall.png" alt="" height="233" width="350"></a><br>
 					<br>
-					The <a href="http://digitalmedia.jhu.edu/projects/interstices/">Interstices</a> dynamic light installation was a project by by employees at the JHU DMC. It is a large grid of boxes (13x5) that each contain RGB LEDS. It is equipped with various sensors to allow it to change depending on its environment. <br>
+					The <a href="http://digitalmedia.jhu.edu/projects/interstices/">Interstices</a> dynamic light installation was a project by by employees at the JHU DMC. It is a large grid of boxes (13x5) that each contain RGB LEDS. It is equipped with various sensors to allow it to change depending on its environment. <br><br>
 					The code is available on <a href="https://github.com/milt/interstices">GitHub</a>.
 					</p>
 				</div>
@@ -319,7 +333,7 @@
 					<p>
 					<a href="http://imgur.com/a/rZoVc/all#0"><img src="/img/monopoly.jpg" alt="" width="350" height="233"></a><br>
 					<br>
-					My friend Maria and I design and assembled this Harry Potter themed game of Monopoly.<br>
+					My friend Maria and I design and assembled this Harry Potter themed game of Monopoly.<br><br>
 					The files are all available on my <a href="https://github.com/lominsky/Harry-Potter-Monopoly">GitHub page</a>.
 					</p>
 				</div>
@@ -344,7 +358,7 @@
 	<script>
 	// basic show and hide
 	$(document).ready(function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').hide();
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike,#projects3-crossword').hide();
 
 	
 		if(window.location.href.indexOf("#contact") > -1) {
@@ -391,6 +405,10 @@
 			$('#projects3-skittles').toggle();
 			document.getElementById('projects-skittles').style.color ='#090';
 		}
+		if(window.location.href.indexOf("#projects-crossword") > -1) {
+			$('#projects3-crossword').toggle();
+			document.getElementById('projects-crossword').style.color ='#090';
+		}
 		if(window.location.href.indexOf("#projects-catan") > -1) {
 			$('#projects3-catan').toggle();
 			document.getElementById('projects-catan').style.color ='#090';
@@ -423,28 +441,28 @@
 
 	
 	   $('#work').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#work2').fadeIn("slow");
 		resetBackground();
 		document.getElementById('work').style.color ='#900';
 		document.getElementById('title').style.color ='#900';
 	   });
 	   $('#projects').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects2').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects').style.color ='#090';
 		document.getElementById('title').style.color ='#090';
 	   });
 	   $('#school').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#school2').fadeIn("slow");
 		resetBackground();
 		document.getElementById('school').style.color ='#009';
 		document.getElementById('title').style.color ='#009';
 	   });
 	   $('#contact').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#contact2').fadeIn("slow");
 		resetBackground();
 		document.getElementById('contact').style.color ='#7851A9';
@@ -486,56 +504,63 @@
 		document.getElementById('school').style.color ='#009';
 	   });
 	   $('#projects-skittles').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-skittles').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-skittles').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
+	   $('#projects-crossword').click( function() {
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-crossword').fadeIn("slow");
+		resetBackground();
+		document.getElementById('projects-crossword').style.color ='#090';
+		document.getElementById('projects').style.color ='#090';
+	   });
 	   $('#projects-spoofer').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-spoofer').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-spoofer').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-lightwall').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-lightwall').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-lightwall').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-makerbot').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-makerbot').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-makerbot').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-monopoly').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-monopoly').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-monopoly').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-catan').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-catan').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-catan').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-shitforhelen').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-shitforhelen').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-shitforhelen').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-bike').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-bike').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-bike').style.color ='#090';
@@ -554,6 +579,7 @@
 			document.getElementById('school-jhu').style.color ="";
 			document.getElementById('school-pci').style.color ="";
 			document.getElementById('projects-skittles').style.color ="";
+			document.getElementById('projects-crossword').style.color ="";
 			document.getElementById('projects-spoofer').style.color ="";
 			document.getElementById('projects-catan').style.color ="";
 			document.getElementById('projects-makerbot').style.color ="";
