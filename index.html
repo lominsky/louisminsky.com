@@ -179,6 +179,9 @@
 						<tr>
 							<td height="30"><a href="#projects-monopoly" id="projects-monopoly" class="projects2">Harry Potter Monopoly</a></td>
 						</tr>
+						<tr>
+							<td height="30"><a href="#projects-bike" id="projects-bike" class="projects2">Tall Bike</a></td>
+						</tr>
 					</table>
 				</div>
 				<div id="contact2">
@@ -320,6 +323,17 @@
 					The files are all available on my <a href="https://github.com/lominsky/Harry-Potter-Monopoly">GitHub page</a>.
 					</p>
 				</div>
+				<div id="projects3-bike">
+					<h2>Tall Bike</h2>
+					<p>
+					For our high school senior project, my friend Fred and I built a tall bike.<br><br>
+					Here are some videos of us riding it:<br>
+					<a href="http://youtu.be/s7Q4GUYk-6Q">Video 1</a><br>
+					<a href="http://youtu.be/ZPanOQrpKfU">Video 2</a><br>
+					<a href="http://youtu.be/H0cP2kjCRgc">Video 3</a><br>
+					<a href="http://youtu.be/xWCXmq6sI24">Video 4</a><br>
+					</p>
+				</div>
 			</div>
 		</th>
 		</tr>
@@ -330,7 +344,7 @@
 	<script>
 	// basic show and hide
 	$(document).ready(function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').hide();
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').hide();
 
 	
 		if(window.location.href.indexOf("#contact") > -1) {
@@ -401,32 +415,36 @@
 			$('#projects3-lightwall').toggle();
 			document.getElementById('projects-lightwall').style.color ='#090';
 		}
+		if(window.location.href.indexOf("#projects-bike") > -1) {
+			$('#projects3-bike').toggle();
+			document.getElementById('projects-bike').style.color ='#090';
+		}
 	
 
 	
 	   $('#work').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#work2').fadeIn("slow");
 		resetBackground();
 		document.getElementById('work').style.color ='#900';
 		document.getElementById('title').style.color ='#900';
 	   });
 	   $('#projects').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects2').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects').style.color ='#090';
 		document.getElementById('title').style.color ='#090';
 	   });
 	   $('#school').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#school2').fadeIn("slow");
 		resetBackground();
 		document.getElementById('school').style.color ='#009';
 		document.getElementById('title').style.color ='#009';
 	   });
 	   $('#contact').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#contact2').fadeIn("slow");
 		resetBackground();
 		document.getElementById('contact').style.color ='#7851A9';
@@ -468,52 +486,59 @@
 		document.getElementById('school').style.color ='#009';
 	   });
 	   $('#projects-skittles').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-skittles').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-skittles').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-spoofer').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-spoofer').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-spoofer').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-lightwall').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-lightwall').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-lightwall').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-makerbot').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-makerbot').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-makerbot').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-monopoly').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-monopoly').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-monopoly').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-catan').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-catan').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-catan').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 	   $('#projects-shitforhelen').click( function() {
-		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen').fadeOut("fast").delay(400);
+		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
 		$('#projects3-shitforhelen').fadeIn("slow");
 		resetBackground();
 		document.getElementById('projects-shitforhelen').style.color ='#090';
+		document.getElementById('projects').style.color ='#090';
+	   });
+	   $('#projects-bike').click( function() {
+		$('#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
+		$('#projects3-bike').fadeIn("slow");
+		resetBackground();
+		document.getElementById('projects-bike').style.color ='#090';
 		document.getElementById('projects').style.color ='#090';
 	   });
 
@@ -535,6 +560,7 @@
 			document.getElementById('projects-lightwall').style.color ="";
 			document.getElementById('projects-monopoly').style.color ="";
 			document.getElementById('projects-shitforhelen').style.color ="";
+			document.getElementById('projects-bike').style.color ="";
 	   }
 	});
 </script>
