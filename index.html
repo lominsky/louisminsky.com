@@ -1,594 +1,464 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-	 
-	<script type="text/javascript" src="js/jquery.js"></script> 
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-26329661-2']);
-	  _gaq.push(['_trackPageview']);
+<!DOCTYPE html>
+<html lang="en">
 
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
-	 
-	<title>Louis Minsky</title> 
-	
-	<style type="text/css"> 
-		body { 
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
-			background-color: #FFFFF;
-			margin-left: 50px;
-		}
-		
-		h1 {
-			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-weight: 200;
-			font-size: 3em;
-			font-weight: bold;
-			line-height: 1em;
-			margin-bottom: 20px;
-			margin-top: 100px;
-			color: #A22222;
-			
-		}
-		
-		h2 {
-			margin-bottom: 0px;
-			align: left;
-		}
+<head>
 
-		
-		div#col1 {
-			width: 150px;
-			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-weight: 200;
-			font-weight: 200;
-		}
-		
-		div#col2 {
-			width: 250px;
-			margin-top: 0px;
-			font-weight: normal;
-		}
-		
-		div#col3 {
-			width: 350px;
-			margin-top: 0px;
-			font-weight: normal;
-		}
-		
-		a.title:link {color: #000; background: #fff; text-decoration: none;}
-		a.title:visited {color: #000; background: #fff; text-decoration: none;}
-		a.title:hover {color: #000; background: #fff; text-decoration: none;}
-		a.title:active {color: #000; background: #fff; text-decoration: none;}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		a.school:link {color: #000; text-decoration: none;}
-		a.school:visited {color: #000; text-decoration: none;}
-		a.school:hover {color: #009; background: #fff; text-decoration: none;}
-		a.school:active {color: #009; background: #fff; text-decoration: none;}
-		
-		a.work:link {color: #000; text-decoration: none;}
-		a.work:visited {color: #000; text-decoration: none;}
-		a.work:hover {color: #900; background: #fff; text-decoration: none;}
-		a.work:active {color: #900; background: #fff; text-decoration: none;}
-		
-		a.projects:link {color: #000; background: #fff; text-decoration: none;}
-		a.projects:visited {color: #000; background: #fff; text-decoration: none;}
-		a.projects:hover {color: #090; background: #fff; text-decoration: none;}
-		a.projects:active {color: #090; background: #fff; text-decoration: none;}
-		
-		a.contact:link {color: #000; background: #fff; text-decoration: none;}
-		a.contact:visited {color: #000; background: #fff; text-decoration: none;}
-		a.contact:hover {color: #7851A9; background: #fff; text-decoration: none;}
-		a.contact:active {color: #7851A9; background: #fff; text-decoration: none;}
-		
-		a.contact2:link {color: #000; background: #fff; text-decoration: none;}
-		a.contact2:visited {color: #000; background: #fff; text-decoration: none;}
-		a.contact2:hover {color: #7851A9; background: #fff; text-decoration: none;}
-		a.contact2:active {color: #7851A9; background: #fff; text-decoration: none;}
+    <title>Louis Minsky</title>
 
-		a.work2:link {color: #000; background: #fff; text-decoration: none;}
-		a.work2:visited {color: #000; background: #fff; text-decoration: none;}
-		a.work2:hover {color: #900; background: #fff; text-decoration: none;}
-		a.work2:active {color: #900; background: #fff; text-decoration: none;}
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-		a.school2:link {color: #000; background: #fff; text-decoration: none;}
-		a.school2:visited {color: #000; background: #fff; text-decoration: none;}
-		a.school2:hover {color: #009; background: #fff; text-decoration: none;}
-		a.school2:active {color: #009; background: #fff; text-decoration: none;}
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
 
-		a.projects2:link {color: #000; background: #fff; text-decoration: none;}
-		a.projects2:visited {color: #000; background: #fff; text-decoration: none;}
-		a.projects2:hover {color: #090; background: #fff; text-decoration: none;}
-		a.projects2:active {color: #090; background: #fff; text-decoration: none;}
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
 
-		
-	</style> 
+<body id="page-top" class="index">
 
-	<body>
-		<h1><a href="" id="title" class="title">Louis Minsky</a></h1>
-	
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Louis Minsky</a>
+            </div>
 
-		<table border="0">
-		<tr>
-		<th align=left valign=top>
-			<div id="col1">
-				<table boarder="0">
-					<tr>
-						<td height="30"><a href="#work" id="work" class="work">Work</a></td>
-					</tr>
-					<tr>
-						<td height="30"><a href="#school" id="school" class="school">School</a></td>
-					</tr>
-					<tr>
-						<td height="30"><a href="#projects" id="projects" class="projects">Projects</a></td>
-					</tr>
-					<tr>
-						<td height="30"><a href="#contact" id="contact" class="contact">Contact</a></td>
-					</tr>
-				</table>
-			</div>
-		</th>
-		<th valign=top>
-			<div id="col2">
-				<div id="work2">
-					<table border="0">
-						<tr>
-							<td height="30"><a href="#work-jhu" id="work-jhu" class="work2">Johns Hopkins University</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#work-svc" id="work-svc" class="work2">Shire Village Camp</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#work-pci" id="work-pci" class="work2">Packer Collegiate Institute</a></td>
-						</tr>
-					</table>
-				</div>
-				<div id="school2">
-					<table border="0">
-						<tr>
-							<td height="30"><a href="#school-jhu" id="school-jhu" class="school2">Johns Hopkins University</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#school-pci" id="school-pci" class="school2">Packer Collegiate Institute</a></td>
-						</tr>
-					</table>
-				</div>
-				<div id="projects2">
-					<table border="0">
-						<tr>
-							<td height="30"><a href="#projects-skittles" id="projects-skittles" class="projects2">Skittle Sorter</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#projects-crossword" id="projects-crossword" class="projects2">Crossword Puzzle</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#projects-spoofer" id="projects-spoofer" class="projects2">Magnetic Stripe Spoofer</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#projects-catan" id="projects-catan" class="projects2">3D Catan</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#projects-lightwall" id="projects-lightwall" class="projects2">Light Wall</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#projects-shitforhelen" id="projects-shitforhelen" class="projects2">Shit For Helen</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#projects-makerbot" id="projects-makerbot" class="projects2">Makerbot</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#projects-monopoly" id="projects-monopoly" class="projects2">Harry Potter Monopoly</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="#projects-bike" id="projects-bike" class="projects2">Tall Bike</a></td>
-						</tr>
-					</table>
-				</div>
-				<div id="contact2">
-					<table border="0">
-						<tr>
-							<td height="30"><a href="mailto:website@louisminsky.com" class="contact2">Email</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="http://www.facebook.com/louisminsky" class="contact2">Facebook</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="http://www.linkedin.com/pub/louis-minsky/3a/aa1/b00" class="contact2">LinkedIn</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="https://plus.google.com/105824973337390288579" class="contact2">Google+</a></td>
-						<tr>
-							<td height="30"><a href="https://twitter.com/lominsky" class="contact2">Twitter</a></td>
-						</tr>
-						<tr>
-							<td height="30"><a href="http://www.radioreference.com/apps/ham/callsign/KC2YBA" class="contact2">Amateur Radio</a></td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</th>
-		<th valign=top align=left>
-			<div id="col3">
-				<div id="work3-jhu">
-					<h2>Johns Hopkins University</h2>
-					<a href="http://digitalmedia.jhu.edu">Website</a>
-					<p>
-					Digital Media Center <br>
-					Student Staff <br>
-					2010 - Present <br></br>
-					Nominated for JHU Student Employee <br>of the Year 2013
-					</p>
-				</div>
-				<div id="work3-svc">
-					<h2>Shire Village Camp</h2>
-					<a href="http://www.shirevillage.org">Website</a>
-					<p>
-					Bunk Counselor <br>
-					2011, 2012 <br>
-					<br>
-					Kitchen Prep <br>
-					2010 <br>
-					</p>
-				</div>
-				<div id="work3-pci">
-					<h2>Packer Collegiate Insitute</h2>
-					<a href="http://www.packer.edu">Website</a>
-					<p>
-					IT Department <br>
-					Student Worker <br>
-					2007 - 2009 <br>
-					<br>
-					Robotics Team Coach <br>
-					Student Worker <br>
-					2007 - 2009 <br>
-					</p>
-				</div>
-				<div id="school3-jhu">
-					<h2>Johns Hopkins University</h2>
-					<p>
-					Bachelor of Science in Computer Engineering <br>
-					Class of 2013 <br>
-					<br>
-					Select Coursework: <br>
-					Robot Sensors and Actuators, Electronics Design Lab, Product Design Lab, Microprocessor Lab, Intro to VLSI, Intro to Programming (Java), Intermediate Programming (C / C++), Data Structures, Computer Systems Fundementals, Embeded Systems Fundementals, Intro to CAD, Intro to GIS, Robot Sensors and Actuators, Mechatronics
-					</p>
-				</div>
-				<div id="school3-pci">
-					<h2>Packer Collegiate Institute</h2>
-					<p>
-					High School Degree<br>
-					Class of 2009 <br>
-					</p>
-				</div>
-				<div id="projects3-skittles">
-					<h2>Skittle Sorter</h2>
-					<p>
-					<a href="http://youtu.be/aRayjgAdrHQ"><img src="/img/skittleSorter.jpg" alt="" width="350" height="466"></a><br>
-					<p>
-					See it in action <a href="http://youtu.be/aRayjgAdrHQ">here</a>.<br><br>
-					A skittle sorting machine designed and built in around three days by Matthew DelGrosso, Justin Rubin, and James Shepherdson, and me.<br><br>
-					It was built for and won an Arduino project competition hosted by The JHU IEEE and the ECE department.<br><br>
-					Code and CAD files can be found at <a href="https://github.com/BannerMatt/CandySorter">GitHub</a>.
-					</p>
-				</div>
-				<div id="projects3-crossword">
-					<h2>Crossword Puzzle</h2>
-					<p>
-					<img src="/img/crossword.png" alt="" width="350" height="350"><br>
-					<p>
-					In March 2013, after binging on crossword puzzles, I decided to try my hand at making my own.<br><br>
-					It is available as both a PDF and an Across Lite file:<br>
-					<a href="https://www.dropbox.com/s/435g7zwilijfurn/Minsky_Crossword.pdf">PDF</a><br>
-					<a href="https://www.dropbox.com/s/r45oag0y8ipojr7/Minsky_Crossword.puz">Across Lite</a>
-					</p>
-				</div>
-				<div id="projects3-spoofer">
-					<h2>Magnetic Stripe Spoofer</h2>
-					<p>
-					<a href="http://youtu.be/y988PGSIGDA"><img src="/img/spoofer.jpg" alt="" width="350" height="233"></a><br>
-					<p>
-					For our Electronics Design Lab, Jeff Boye and I built a magnetic stripe spoofing device. It was made using an Arduino and has the ability to enter 16 digit values (printed on our school IDs) either manually or using an attached card reader. It can store ten different IDs in EEPROM for easy access. We also gave it the ability to iterate through values, however slow read times make this an inefficient strategy.<br><br>
-					See our project video <a href="http://youtu.be/y988PGSIGDA">here</a>
-					</p>
-				</div>
-				<div id="projects3-catan">
-					<h2>3D Catan</h2>
-					<p>
-					<a href="http://imgur.com/a/oPcsq/all#0"><img src="/img/catan.jpg" alt="" width="350" height="233"></a><br>
-					<br>
-					I made a Settlers of Catan board on a 3D printer. The regular game board is made out of cardboard and that tends to warp with the seasons, so I made this with interlocking pieces that allow it to get knocked around a bit without destroying your game. <br><br>
-					The CAD files are all available on <a href="http://www.thingiverse.com/thing:25224">Thingiverse</a>.
-					</p>
-				</div>
-				<div id="projects3-lightwall">
-					<h2>Light Wall</h2>
-					<p>
-					<a href="http://digitalmedia.jhu.edu/projects/interstices/"><img src="/img/lightwall.png" alt="" height="233" width="350"></a><br>
-					<br>
-					The <a href="http://digitalmedia.jhu.edu/projects/interstices/">Interstices</a> dynamic light installation was a project by by employees at the JHU DMC. It is a large grid of boxes (13x5) that each contain RGB LEDS. It is equipped with various sensors to allow it to change depending on its environment. <br><br>
-					The code is available on <a href="https://github.com/milt/interstices">GitHub</a>.
-					</p>
-				</div>
-				<div id="projects3-shitforhelen">
-					<h2>Shit For Helen</h2>
-					<p>
-					<a href="http://shitforhelen.tumblr.com"><img src="/img/shitforhelen.jpg" alt=""></a><br>
-					<br>
-					I started <a href="http://shitforhelen.tumblr.com">Shit For Helen</a> in September 2011 as a way to show my sister neat things that I find around the internet. I try to update it once a day.
-					</p>
-				</div>
-				<div id="projects3-makerbot">
-					<h2>Makerbot</h2>
-					<p>
-					<img src="/img/makerbot.jpg" alt="" height="466" width="350"><br>
-					<br>
-					In the fall of 2010 I applied for and received the <a href="http://digitalmedia.jhu.edu/news/creative-use-of-tech-grants/">Creative Use of Technology Grant</a> from the Johns Hopkins Digital Media Center so that I could create a 3D printering service for students. I chose to build a Makerbot Thing-O-Matic. I mainatain it and run the service.
-					</p>
-				</div>
-				<div id="projects3-monopoly">
-					<h2>Harry Potter Monopoly</h2>
-					<p>
-					<a href="http://imgur.com/a/rZoVc/all#0"><img src="/img/monopoly.jpg" alt="" width="350" height="233"></a><br>
-					<br>
-					My friend Maria and I design and assembled this Harry Potter themed game of Monopoly.<br><br>
-					The files are all available on my <a href="https://github.com/lominsky/Harry-Potter-Monopoly">GitHub page</a>.
-					</p>
-				</div>
-				<div id="projects3-bike">
-					<h2>Tall Bike</h2>
-					<p>
-					For our high school senior project, my friend Fred and I built a tall bike.<br><br>
-					Here are some videos of us riding it:<br>
-					<a href="http://youtu.be/s7Q4GUYk-6Q">Video 1</a><br>
-					<a href="http://youtu.be/ZPanOQrpKfU">Video 2</a><br>
-					<a href="http://youtu.be/H0cP2kjCRgc">Video 3</a><br>
-					<a href="http://youtu.be/xWCXmq6sI24">Video 4</a><br>
-					</p>
-				</div>
-			</div>
-		</th>
-		</tr>
-		</table>
-		
-	</body>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#education">Education</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#work">Work</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-	<script>
-	// basic show and hide
-	$(document).ready(function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike,#projects3-crossword').hide();
+    <!-- Header -->
+    <!--
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Start Bootstrap</span>
+                        <hr class="star-light">
+                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    -->
 
-	
-		if(window.location.href.indexOf("#contact") > -1) {
-			$('#contact2').toggle();
-			document.getElementById('contact').style.color ='#7851A9';
-			document.getElementById('title').style.color ='#7851A9';
-		}
-		if(window.location.href.indexOf("#school") > -1) {
-		   $('#school2').toggle();
-			document.getElementById('school').style.color ='#009';
-			document.getElementById('title').style.color ='#009';
-		}
-		if(window.location.href.indexOf("#work") > -1) {
-		   $('#work2').toggle();
-			document.getElementById('work').style.color ='#900';
-			document.getElementById('title').style.color ='#900';
-		}
-		if(window.location.href.indexOf("#projects") > -1) {
-		   $('#projects2').toggle();
-			document.getElementById('projects').style.color ='#090';
-			document.getElementById('title').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#school-jhu") > -1) {
-			$('#school3-jhu').toggle();
-			document.getElementById('school-jhu').style.color ='#009';
-		}
-		if(window.location.href.indexOf("#school-pci") > -1) {
-			$('#school3-pci').toggle();
-			document.getElementById('school-pci').style.color ='#009';
-		}
-		if(window.location.href.indexOf("#work-jhu") > -1) {
-			$('#work3-jhu').toggle();
-			document.getElementById('work-jhu').style.color ='#900';
-		}
-		if(window.location.href.indexOf("#work-pci") > -1) {
-			$('#work3-pci').toggle();
-			document.getElementById('work-pci').style.color ='#900';
-		}
-		if(window.location.href.indexOf("#work-svc") > -1) {
-			$('#work3-svc').toggle();
-			document.getElementById('work-svc').style.color ='#900';
-		}
-		if(window.location.href.indexOf("#projects-skittles") > -1) {
-			$('#projects3-skittles').toggle();
-			document.getElementById('projects-skittles').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#projects-crossword") > -1) {
-			$('#projects3-crossword').toggle();
-			document.getElementById('projects-crossword').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#projects-catan") > -1) {
-			$('#projects3-catan').toggle();
-			document.getElementById('projects-catan').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#projects-monopoly") > -1) {
-			$('#projects3-monopoly').toggle();
-			document.getElementById('projects-monopoly').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#projects-shitforhelen") > -1) {
-			$('#projects3-shitforhelen').toggle();
-			document.getElementById('projects-shitforhelen').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#projects-spoofer") > -1) {
-			$('#projects3-spoofer').toggle();
-			document.getElementById('projects-spoofer').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#projects-makerbot") > -1) {
-			$('#projects3-makerbot').toggle();
-			document.getElementById('projects-makerbot').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#projects-lightwall") > -1) {
-			$('#projects3-lightwall').toggle();
-			document.getElementById('projects-lightwall').style.color ='#090';
-		}
-		if(window.location.href.indexOf("#projects-bike") > -1) {
-			$('#projects3-bike').toggle();
-			document.getElementById('projects-bike').style.color ='#090';
-		}
-	
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container" id="portCont">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Acrylock.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Arcade.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Silophon.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ModularMancala2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Skittle2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Spoofer2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	
-	   $('#work').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#work2').fadeIn("slow");
-		resetBackground();
-		document.getElementById('work').style.color ='#900';
-		document.getElementById('title').style.color ='#900';
-	   });
-	   $('#projects').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects2').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects').style.color ='#090';
-		document.getElementById('title').style.color ='#090';
-	   });
-	   $('#school').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#school2').fadeIn("slow");
-		resetBackground();
-		document.getElementById('school').style.color ='#009';
-		document.getElementById('title').style.color ='#009';
-	   });
-	   $('#contact').click( function() {
-		$('#work2,#school2,#projects2,#contact2,#work3-jhu,#work3-svc,#work3-pci,#school3-jhu,#school3-pci,#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#contact2').fadeIn("slow");
-		resetBackground();
-		document.getElementById('contact').style.color ='#7851A9';
-		document.getElementById('title').style.color ='#7851A9';
-	   });
-	   $('#work-jhu').click( function() {
-		$('#work3-jhu,#work3-svc,#work3-pci').fadeOut("fast").delay(400);
-		$('#work3-jhu').fadeIn("slow");
-		resetBackground();
-		document.getElementById('work').style.color ='#900';
-		document.getElementById('work-jhu').style.color ='#900';
-	   });
-	   $('#work-svc').click( function() {
-		$('#work3-jhu,#work3-svc,#work3-pci').fadeOut("fast").delay(400);
-		$('#work3-svc').fadeIn("slow");
-		resetBackground();
-		document.getElementById('work').style.color ='#900';
-		document.getElementById('work-svc').style.color ='#900';
-	   });
-	   $('#work-pci').click( function() {
-		$('#work3-jhu,#work3-svc,#work3-pci').fadeOut("fast").delay(400);
-		$('#work3-pci').fadeIn("slow");
-		resetBackground();
-		document.getElementById('work').style.color ='#900';
-		document.getElementById('work-pci').style.color ='#900';
-	   });
-	   $('#school-jhu').click( function() {
-		$('#school3-jhu,#school3-pci').fadeOut("fast").delay(400);
-		$('#school3-jhu').fadeIn("slow");
-		resetBackground();
-		document.getElementById('school-jhu').style.color ='#009';
-		document.getElementById('school').style.color ='#009';
-	   });
-	   $('#school-pci').click( function() {
-		$('#school3-jhu,#school3-pci').fadeOut("fast").delay(400);
-		$('#school3-pci').fadeIn("slow");
-		resetBackground();
-		document.getElementById('school-pci').style.color ='#009';
-		document.getElementById('school').style.color ='#009';
-	   });
-	   $('#projects-skittles').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-skittles').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-skittles').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
-	   $('#projects-crossword').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-crossword').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-crossword').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
-	   $('#projects-spoofer').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-spoofer').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-spoofer').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
-	   $('#projects-lightwall').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-lightwall').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-lightwall').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
-	   $('#projects-makerbot').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-makerbot').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-makerbot').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
-	   $('#projects-monopoly').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-monopoly').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-monopoly').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
-	   $('#projects-catan').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-catan').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-catan').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
-	   $('#projects-shitforhelen').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-shitforhelen').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-shitforhelen').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
-	   $('#projects-bike').click( function() {
-		$('#projects3-skittles,#projects3-crossword,#projects3-spoofer,#projects3-lightwall,#projects3-makerbot,#projects3-monopoly,#projects3-catan,#projects3-shitforhelen,#projects3-bike').fadeOut("fast").delay(400);
-		$('#projects3-bike').fadeIn("slow");
-		resetBackground();
-		document.getElementById('projects-bike').style.color ='#090';
-		document.getElementById('projects').style.color ='#090';
-	   });
+    <!-- Education Section -->
+    <section class="success" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Education</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <h4>New York University</h4>
+                    <p>Class of 2016</p>
+                    <p>Master of Professional Studies from the Interactive Telecommunications Program.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Johns Hopkins University</h4>
+                    <p>Class of 2013</p>
+                    <p>Bachelor of Science in Computer Engineering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	   
-	   function resetBackground() {
-			document.getElementById('work').style.color ="";
-			document.getElementById('school').style.color ="";
-			document.getElementById('projects').style.color ="";
-			document.getElementById('contact').style.color ="";
-			document.getElementById('work-jhu').style.color ="";
-			document.getElementById('work-pci').style.color ="";
-			document.getElementById('work-svc').style.color ="";
-			document.getElementById('school-jhu').style.color ="";
-			document.getElementById('school-pci').style.color ="";
-			document.getElementById('projects-skittles').style.color ="";
-			document.getElementById('projects-crossword').style.color ="";
-			document.getElementById('projects-spoofer').style.color ="";
-			document.getElementById('projects-catan').style.color ="";
-			document.getElementById('projects-makerbot').style.color ="";
-			document.getElementById('projects-lightwall').style.color ="";
-			document.getElementById('projects-monopoly').style.color ="";
-			document.getElementById('projects-shitforhelen').style.color ="";
-			document.getElementById('projects-bike').style.color ="";
-	   }
-	});
-</script>
-	
+    <!-- Work Section -->
+    <section class="success" id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Work</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <h4>Packer Collegiate Institute</h4>
+                    <p>Computer Science Faculty (September 2016 - Present)</p> 
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <h4>Shire Village Camp</h4>
+                    <p>Associate Director (Summer 2016)</p>
+                    <p>Assistant Director (Summer 2015)</p>
+                    <p>CW Supervisor (Summer 2014)</p>
+                    <p>Group Counselor (Summer 2013)</p>
+                    <p>Bunk Counselor (Summers 2011 / 2012)</p>
+                    <p>Prep Cook (Summer 2010)</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <h4>Columbia University - School of Professional Studies</h4>
+                    <p>Technology Service Technician (November 2013 - June 2016)</p> 
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <h4>Johns Hopkins University - Digital Media Center</h4>
+                    <p>Lab Coach (September 2010 -  May 2013)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Louis Minsky 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>AcryLock</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/Acrylock.gif" class="img-responsive img-centered" alt="">
+                            <p>The AcryLock is a demonstration lock made out of acrylic and the springs from retractable pends. The lock can but laser cut from a single sheet of 1/4" acrylic, but is scalable for other widths. It was created for Project Design Lab with <a href="http://www.smoothware.com/danny/">Danny Rozin</a>.</p>
+                            <ul class="list-inline item-details">
+                                <li>Illustrator:
+                                    <strong><a href="#">.ai</a>
+                                    </strong>
+                                </li>
+                                <li>SVG:
+                                    <strong><a href="#">.svg</a>
+                                    </strong>
+                                </li>
+                                <li>More Info:
+                                    <strong><a href="#">Project Site</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Arcade</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/Arcade.png" class="img-responsive img-centered" alt="">
+                            <p>Arcade is an arcade cabinet built with Kat Sulivan and Paul Hiam for <a href="http://www.kleebtronics.com/teaching/arcadecabs">Digital Fabrication for Arcade Cabinet Design</a>. It contains three games: Vector Jump (Louis Minsky), BrickBreaker Duel (Kat Sulivan), and Space...Woah (Paul Hiam).</p>
+                            <ul class="list-inline item-details">
+                                <li>Kat:
+                                    <strong><a href="http://katsully.com/arcade/">Project Post</a>
+                                    </strong>
+                                </li>
+                                <li>Paul:
+                                    <strong><a href="http://www.pshiam-projects.net/">Website</a>
+                                    </strong>
+                                </li>
+                                <li>Project Site:
+                                    <strong><a href="#">Project Site</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Silophon</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/silophon-1.png" class="img-responsive img-centered" alt="">
+                            <p>The Silophon is an assistive instrument/toy designed to create a positive experience of sound, specifically for children with autism. Silophon is designed to look like the classic xylophone, crafted with felt, allowing the user to play by hitting the keys with their hands or soft mallets, and also allowing the user to control the level of volume. It was created with Dalit Shalom as a final project for <a href="http://itp.nyu.edu/physcomp/">Physical Computing</a>.</p>
+                            <ul class="list-inline item-details">
+                                <li>Dalit:
+                                    <strong><a href="http://dalitshalom.com/project/silophon/">Project Post</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Modular Mancala</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/ModularMancala.jpg" class="img-responsive img-centered" alt="">
+                            <p>Modular Mancala is a new version of the game Mancala. The design of the board allows for different numbers of players to join in.</p>
+                            <ul class="list-inline item-details">
+                                <li>Site:
+                                    <strong><a href="http://modularmancala.com">Modular Mancala</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Skittle Sorter</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/Skittle.jpg" class="img-responsive img-centered" alt="">
+                            <p>I created the Skittle Sorter with <a href="https://www.linkedin.com/in/matthewdelgrosso">Matthew DelGrosso</a>, <a href="https://www.linkedin.com/in/justinarubin">Justin Rubin</a>, and <a href="https://www.linkedin.com/in/jamesshepherdson">James Shepherdson</a>. It was our winning entry in the JHU IEEE's 2013 Arduino Project contest.</p>
+                            <ul class="list-inline item-details">
+                                <li>Project Repository:
+                                    <strong><a href="https://github.com/BannerMatt/CandySorter">GitHub</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>MagStripe Spoofer</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/Spoofer.jpg" class="img-responsive img-centered" alt="">
+                            <p>I created the MagStripe Spoofer with <a href="https://www.linkedin.com/in/jeffrey-boye-01300816">Jeff Boye</a> for <a href="https://engineering.jhu.edu/csms/ece448/">Engineering Design Lab</a>. It is capable of mimicing a real ID card. Additional features include reading a magnetic stripe off an existing card and storing it in memory for later use, manual entry of a value to spoof, and iterative spoofing to try multiple values.</p>
+                            <ul class="list-inline item-details">
+                                <li>Video:
+                                    <strong><a href="https://www.youtube.com/watch?v=y988PGSIGDA">YouTube</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
 </html>
